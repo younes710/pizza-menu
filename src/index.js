@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 // React before 18
 // import ReactDOM from 'react-dom';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 const pizzaData = [
     {
@@ -55,6 +56,7 @@ function App() {
     return (
         <>
             <Header />
+            <Footer />
         </>
     );
 }
