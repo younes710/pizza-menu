@@ -3,7 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // React before 18
 // import ReactDOM from 'react-dom';
-import Header from './components/Header';
+import styles from './index.css';
+import Header from './components/Header/Header';
 import Footer from './components/Footer';
 import Menu from './components/Menu';
 
@@ -55,11 +56,11 @@ const pizzaData = [
 // React v18
 function App() {
     return (
-        <>
+        <div className={styles['container']}>
             <Header />
             <Menu />
             <Footer />
-        </>
+        </div>
     );
 }
 
