@@ -19,4 +19,4 @@ root.render(
 );
 
 // React before 18
-// React.render(<App/>);
+// React.render(<App/>, document.getElementById('root'));
