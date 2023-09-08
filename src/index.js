@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom/client';
 import styles from './index.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Menu from './components/Menu';
+import Menu from './components/Menu/Menu';
 
 const pizzaData = [
     {
