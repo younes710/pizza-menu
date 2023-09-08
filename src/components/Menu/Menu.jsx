@@ -1,5 +1,5 @@
 import styles from './menu.module.css';
-import Pizza from '../Pizza';
+import Pizza from '../pizza/Pizza';
 
 const Menu = () => {
     return (

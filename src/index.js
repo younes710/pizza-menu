@@ -4,9 +4,9 @@ import ReactDOM from 'react-dom/client';
 // React before 18
 // import ReactDOM from 'react-dom';
 import styles from './index.css';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Menu from './components/Menu/Menu';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+import Menu from './components/menu/Menu';
 
 const pizzaData = [
     {
