@@ -1,3 +1,4 @@
+import Order from '../order/Order';
 import styles from './footer.module.css';
 
 const Footer = () => {
@@ -9,13 +10,7 @@ const Footer = () => {
     return (
         <footer className={styles['footer']}>
             {isOpen ? (
-                <div className={styles['order']}>
-                    <p className={styles['order']}>
-                        We're open until {closeHour}:00. Come visit us or order
-                        online.
-                    </p>
-                    <button className={styles['btn']}>Order</button>
-                </div>
+                <Order closeHour={closeHour} />
             ) : (
                 <p className={styles['order']}>
                     We're happy to welcome you between {openHour}:00 and{' '}
