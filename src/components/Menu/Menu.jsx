@@ -53,12 +53,16 @@ const Menu = () => {
     return (
         <div className={styles['menu']}>
             <h2>Our Menu</h2>
-            {numPizzas > 0 && (
+            {numPizzas > 0 ? (
                 <ul className={styles['pizzas']}>
                     {pizzaData.map((pizza, index) => (
                         <Pizza pizzaObj={pizza} key={index} />
                     ))}
                 </ul>
+            ) : (
+                <p>
+                    We're still working on our menu, Please come back later :)
+                </p>
             )}
         </div>
     );
