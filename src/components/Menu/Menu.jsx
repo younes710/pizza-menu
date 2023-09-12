@@ -51,20 +51,27 @@ const Menu = () => {
     const numPizzas = pizzas.length;
 
     return (
-        <div className={styles['menu']}>
+        <main className={styles['menu']}>
             <h2>Our Menu</h2>
             {numPizzas > 0 ? (
-                <ul className={styles['pizzas']}>
-                    {pizzaData.map((pizza, index) => (
-                        <Pizza pizzaObj={pizza} key={index} />
-                    ))}
-                </ul>
+                <>
+                    <p>
+                        Authentic Italian cuisine. 6 creative dishes to choos
+                        from. All from our stone oven, all organic, all
+                        delicious
+                    </p>
+                    <ul className={styles['pizzas']}>
+                        {pizzaData.map((pizza, index) => (
+                            <Pizza pizzaObj={pizza} key={index} />
+                        ))}
+                    </ul>
+                </>
             ) : (
                 <p>
                     We're still working on our menu, Please come back later :)
                 </p>
             )}
-        </div>
+        </main>
     );
 };
 
