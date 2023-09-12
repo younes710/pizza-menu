@@ -47,14 +47,19 @@ const pizzaData = [
 ];
 
 const Menu = () => {
+    const pizzas = pizzaData;
+    const numPizzas = pizzas.length;
+
     return (
         <div className={styles['menu']}>
             <h2>Our Menu</h2>
-            <ul className={styles['pizzas']}>
-                {pizzaData.map((pizza, index) => (
-                    <Pizza pizzaObj={pizza} key={index} />
-                ))}
-            </ul>
+            {numPizzas > 0 && (
+                <ul className={styles['pizzas']}>
+                    {pizzaData.map((pizza, index) => (
+                        <Pizza pizzaObj={pizza} key={index} />
+                    ))}
+                </ul>
+            )}
         </div>
     );
 };

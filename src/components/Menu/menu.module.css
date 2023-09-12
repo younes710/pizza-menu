@@ -28,4 +28,5 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4.8rem;
+    margin-bottom: 2rem;
 }
