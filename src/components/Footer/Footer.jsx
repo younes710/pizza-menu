@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <footer className={styles['footer']}>
             {isOpen ? (
-                <Order closeHour={closeHour} />
+                <Order closeHour={closeHour} openHour={openHour} />
             ) : (
                 <p className={styles['order']}>
                     We're happy to welcome you between {openHour}:00 and{' '}
